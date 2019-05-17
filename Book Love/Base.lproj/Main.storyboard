@@ -200,12 +200,12 @@ The more novel elements of this formula being the importance of ecology and the 
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TzT-Kk-PuQ" kind="relationship" relationship="rootViewController" id="QwP-UX-kXm"/>
+                        <segue destination="83Z-Z6-RBP" kind="relationship" relationship="rootViewController" id="hdM-Hk-TT5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gp1-17-ZAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-727.20000000000005" y="34.632683658170919"/>
+            <point key="canvasLocation" x="-652" y="72"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wiE-kc-Pgx">
@@ -243,6 +243,78 @@ The more novel elements of this formula being the importance of ecology and the 
             </objects>
             <point key="canvasLocation" x="212" y="811.84407796101959"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KW5-cZ-t6u">
+            <objects>
+                <viewController id="NNR-yj-4wd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3W-Om-4Ar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This application was created in order to grab random quotes for your pleasure." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-KI-qpS">
+                                <rect key="frame" x="67" y="167" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1ag-rv-Tju"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh3-fC-S6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1594.4000000000001" y="-654.42278860569718"/>
+        </scene>
+        <!--homeView-->
+        <scene sceneID="3fT-bj-uux">
+            <objects>
+                <viewController title="homeView" id="83Z-Z6-RBP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRu-Ef-OgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHJ-wf-CTb">
+                                <rect key="frame" x="20" y="114" width="335" height="503"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-rR-vYR">
+                                        <rect key="frame" x="68" y="268" width="198" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <state key="normal" title="Get Quote"/>
+                                        <connections>
+                                            <segue destination="TzT-Kk-PuQ" kind="show" id="gux-6W-jYw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGH-7V-0UG" userLabel="About Quoter">
+                                        <rect key="frame" x="39" y="375" width="259" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <state key="normal" title="About Quoter"/>
+                                        <connections>
+                                            <segue destination="NNR-yj-4wd" kind="show" id="RCj-KH-Ntq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cHJ-wf-CTb" firstAttribute="leading" secondItem="Tpb-Ep-kyn" secondAttribute="leading" constant="20" id="0Ld-px-GRt"/>
+                            <constraint firstItem="Tpb-Ep-kyn" firstAttribute="trailing" secondItem="cHJ-wf-CTb" secondAttribute="trailing" constant="20" id="8c9-jp-LRm"/>
+                            <constraint firstItem="Tpb-Ep-kyn" firstAttribute="bottom" secondItem="cHJ-wf-CTb" secondAttribute="bottom" constant="50" id="Hcp-P3-kjc"/>
+                            <constraint firstItem="cHJ-wf-CTb" firstAttribute="top" secondItem="Tpb-Ep-kyn" secondAttribute="top" constant="50" id="y38-X8-AQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tpb-Ep-kyn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ulj-cI-TyN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1e-7a-Utm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="-673"/>
+        </scene>
         <!--QuoteMainView-->
         <scene sceneID="aZa-B3-4a3">
             <objects>
@@ -266,6 +338,11 @@ The more novel elements of this formula being the importance of ecology and the 
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRt-gq-drw">
+                                        <rect key="frame" x="111" y="429" width="53" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Refresh"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.93796115451388884" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -292,6 +369,7 @@ The more novel elements of this formula being the importance of ecology and the 
                     <connections>
                         <outlet property="quoteAuthor" destination="lFa-fh-ZdI" id="UGI-L9-wun"/>
                         <outlet property="quoteText" destination="tCF-NS-a8q" id="SEI-7X-BMX"/>
+                        <outlet property="refreshButton" destination="sRt-gq-drw" id="4LJ-4J-avi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQ0-rZ-zDT" userLabel="First Responder" sceneMemberID="firstResponder"/>

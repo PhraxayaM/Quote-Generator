@@ -19,6 +19,7 @@
 		49E119C921E8E83800EC007D /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E119C821E8E83700EC007D /* Book.png */; };
 		CD13A9FA228B375C000D869F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9F9228B375C000D869F /* NetworkManager.swift */; };
 		CD13A9FE228B3811000D869F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9FD228B3811000D869F /* Quote.swift */; };
+		CD2041C4228DC56600543D38 /* customButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2041C3228DC56600543D38 /* customButtom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		49E119C821E8E83700EC007D /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Book.png; path = Assets.xcassets/Book.png; sourceTree = "<group>"; };
 		CD13A9F9228B375C000D869F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CD13A9FD228B3811000D869F /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		CD2041C3228DC56600543D38 /* customButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButtom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CD13A9FD228B3811000D869F /* Quote.swift */,
 				4978E47521E67BBF00ED81FA /* AppDelegate.swift */,
 				4978E47721E67BBF00ED81FA /* ViewController.swift */,
+				CD2041C3228DC56600543D38 /* customButtom.swift */,
 				CD13A9F9228B375C000D869F /* NetworkManager.swift */,
 				4978E48721E7F00B00ED81FA /* bookData.json */,
 				4978E47921E67BBF00ED81FA /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				CD13A9FA228B375C000D869F /* NetworkManager.swift in Sources */,
 				4978E47821E67BBF00ED81FA /* ViewController.swift in Sources */,
 				4978E47621E67BBF00ED81FA /* AppDelegate.swift in Sources */,
+				CD2041C4228DC56600543D38 /* customButtom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

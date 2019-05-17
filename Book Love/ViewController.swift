@@ -17,13 +17,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var quoteAuthor: UILabel!
     
+    @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var bookImageView: UIImageView!
     
-    // 1. Create JSON file with the keys you need
-    // 2. Look up how to read the content of the file
-    // 3. Create the struct for you Book item
-    // 4. Look up how to deserialize a JSON file into a NSDictionary -> Codable protocol, Mapper 
-    // 5. Result = array of books
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -41,41 +37,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        NotificationCenter.default.addObserver(self, selector: #selector(onDidReceiveData(_:)), name: .didReceiveData, object: nil)
+//
+//        @objc func onDidReceiveData(_ notification:Notification) {
+//            // Do something now
+//        }
+//
+        var myActivityIndicator = UIActivityIndicatorView(style:UIActivityIndicatorView.Style.gray)
+        myActivityIndicator.center = view.center
+        myActivityIndicator.startAnimating()
+//        var barButtonItem = UIBarButtonItem(customView: view)
+//        self.navigationItem.rightBarButtonItem = barButtonItem
         
+
         
+
+//
+//        @objc func shake() {
+//            let shake = CABasicAnimation(keyPath: "Position")
+//            shake.duration = 0.1
+//            shake.repeatCount = 2
+//            shake.autoreverses = true
+//
         
+//            let fromPoint = CGPoint(x: refreshButton.center.x - 8, y: refreshButton.center.y)
+//            let fromValue = NSValue(cgPoint: fromPoint)
         
-        let gesture = UIPanGestureRecognizer(target: self, action: #selector(wasDragged(gestureRecognizer:)))
-        if let bookImageView = bookImageView {
-            bookImageView.addGestureRecognizer(gesture)
-        }
-    }
-    @objc func wasDragged(gestureRecognizer: UIPanGestureRecognizer) {
-        print("Poster tapped")
-        let labelPoint = gestureRecognizer.translation(in: view)
-        bookImageView.center = CGPoint(x: view.bounds.width / 2 + labelPoint.x, y: view.bounds.height / 2 + labelPoint.y)
-//        bookImageView.center = CGPoint(x: view.center.x + labelPoint.x, y: view.center.y+translationPoint.y)
-//    print(labelView.center.x)
-        let xFromCenter = view.bounds.width / 2 - bookImageView.center.x
-        var rotation = CGAffineTransform(rotationAngle: xFromCenter / 100)
-        let scale = min(100 / abs(xFromCenter), 1)
-        var scaleAndRotated = rotation.scaledBy(x: scale, y: scale)
-        
-        bookImageView.transform = scaleAndRotated
-        
-        if gestureRecognizer.state == .ended {
-            if bookImageView.center.x < (view.bounds.width / 2 - 100) {
-            print("not interested")
-        }
-            if bookImageView.center.x > (view.bounds.width / 2 + 100) {
-            print("interested")
-    }
-            rotation = CGAffineTransform(rotationAngle: 0)
-            scaleAndRotated = rotation.scaledBy(x: 1, y: 1)
-            bookImageView.transform = scaleAndRotated
-            bookImageView.center = CGPoint(x: view.center.x + labelPoint.x, y: view.center.y+labelPoint.y)
-//                CGPoint(x: view.bounds.width / 2, y: view.bounds.height / 2)
     
-        }
-    }
+
+}
 }
